@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    // Add layout
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+        // Add image for the list item
+        <ImageView
+            android:id="@+id/myPic"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:scaleType="fitXY"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+         // Add text view for the heading
+        <TextView
+            android:id="@+id/myHeading"
+            android:text="Heading"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:fontFamily="@font/albemarle_swash"
+            android:textColor="#123987"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:paddingLeft="10dp"
+            android:layout_marginStart="100dp"
+            android:includeFontPadding="false"/>
+
+        // Add text view for the description
+        <TextView
+            android:id="@+id/myDesc"
+            android:text="Description"
+            android:fontFamily="@font/copperplate_gothic_light"
+            android:textColor="#123987"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:layout_marginStart="100dp"
+            android:includeFontPadding="false"/>
+        </LinearLayout>
+</androidx.cardview.widget.CardView>

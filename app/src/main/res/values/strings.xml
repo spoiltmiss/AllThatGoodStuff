@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">All That Good Stuff</string>
+    <string name="logo">All That Good Stuff Logo</string>
+    <string name="title">All That Good Stuff</string>
+    <string name="title_desc">featured recipes</string>
+    <string name="category_desc">ALL THAT GOOD STUFF</string>
+    <string name="menu_home">All That Good Stuff</string>
+    <string name="menu_cakes">Cake</string>
+    <string name="menu_cheesecakes">Cheesecake</string>
+    <string name="menu_desserts">Dessert</string>
+    <string name="menu_puddings">Pudding</string>
+
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/myMenu"
+    app:popupTheme="@style/MenuItemTheme">
+    <item
+        android:id="@+id/home"
+        android:fontFamily="@font/albemarle_swash"
+        android:title="@string/menu_home"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/cakes"
+        android:title="@string/menu_cakes"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/cheesecakes"
+        android:title="@string/menu_cheesecakes"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/desserts"
+        android:title="@string/menu_desserts"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/puddings"
+        android:title="@string/menu_puddings"
+        app:showAsAction="never"/>
+</menu>

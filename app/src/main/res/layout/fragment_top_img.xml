@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorATGS"
+    tools:context=".TopImgFrag">
+
+    <include
+        android:id="@+id/myToolbar"
+        layout="@layout/toolbar"
+        />
+
+    <!--<include-->
+        <!--android:id="@+id/mySearchView"-->
+        <!--layout="@layout/searchbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/myToolbar"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_marginRight="10dp" />-->
+
+    <!--<ListView-->
+        <!--android:id="@+id/myListView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/myToolbar"-->
+        <!--android:layout_marginTop="10dp" />-->
+
+    <include
+        android:id="@+id/myImageSlider"
+        layout="@layout/imageslider"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/myToolbar"
+        android:background="@color/colorATGS"
+        android:focusedByDefault="true" />
+
+    <TextView
+        android:id="@+id/myPicDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/myImageSlider"
+        android:background="@color/colorATGS"
+        android:fontFamily="@font/albemarle_swash"
+        android:paddingBottom="10dp"
+        android:text="@string/title_desc"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/myMenuDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/myPicDesc"
+        android:background="#FFFFFF"
+        android:elevation="4dp"
+        android:fontFamily="@font/copperplate_gothic_light"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="@string/category_desc"
+        android:textAlignment="center"
+        android:textColor="@color/colorATGS"
+        android:textSize="16sp" />
+
+</RelativeLayout>

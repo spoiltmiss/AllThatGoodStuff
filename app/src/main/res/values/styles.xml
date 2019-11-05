@@ -1,0 +1,27 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:actionOverflowButtonStyle">@style/ActionButtonOverflow</item>
+
+        <!-- Support library compatibility -->
+        <item name="actionOverflowButtonStyle">@style/ActionButtonOverflow</item>
+    </style>
+
+    <!-- Menu theme -->
+    <style name="MenuItemTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="editTextStyle">@font/albemarle_swash</item>
+        <item name="editTextColor">@color/colorATGS</item>
+    </style>
+
+    <!-- Actionabar theme -->
+    <style name="ActionButtonOverflow" parent="@style/Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_menu_24dp</item>
+    </style>
+
+
+</resources>
