@@ -1,16 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
     android:orientation="vertical">
 
     <ImageView
-        android:id="@+id/iv_auto_image_slider"
+        android:id="@+id/myImageSlider"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="center"
-        android:paddingTop="10dp"
+        android:layout_height="270dp"
+        android:layout_gravity="center|top"
         android:background="@color/colorATGS"
-        android:scaleType="fitCenter"
-        android:outlineAmbientShadowColor="#FFFFFF"/>
+        android:outlineAmbientShadowColor="#FFFFFF"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/myPicDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="230dp"
+        android:background="@color/colorATGS"
+        android:fontFamily="@font/albemarle_swash"
+        android:text="@string/title_desc"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
 
 </FrameLayout>

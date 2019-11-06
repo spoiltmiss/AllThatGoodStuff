@@ -35,6 +35,8 @@ public class RecipeActivity extends AppCompatActivity {
         Intent intent = getIntent();
         String[] passedIn = intent.getStringArrayExtra("myRecipeInfo");
 
+        Log.i("Whaaat?", passedIn[0]);
+
         //--- Info comes in as strings
         //--- 0 = ref      (ie. 0)
         //--- 1 = rectPic  (ie. rectchoc)

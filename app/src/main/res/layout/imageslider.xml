@@ -3,11 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/myImageSlider"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="300dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
     app:sliderAutoCycleEnabled="true"
     app:sliderCircularHandlerEnabled="true"
     app:sliderIndicatorGravity="center_horizontal|bottom"
-    app:sliderIndicatorMargin="10dp"
+    app:sliderIndicatorMargin="55dp"
     app:sliderIndicatorOrientation="horizontal"
     app:sliderIndicatorPadding="5dp"
     app:sliderIndicatorRadius="3dp"
@@ -15,4 +18,5 @@
     app:sliderIndicatorUnselectedColor="#123987"
     app:sliderScrollTimeInSec="1"
     app:sliderStartAutoCycle="true">
+
 </com.smarteist.autoimageslider.SliderView>

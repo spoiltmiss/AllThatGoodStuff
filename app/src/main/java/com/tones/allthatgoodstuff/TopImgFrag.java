@@ -31,7 +31,7 @@ public class TopImgFrag extends Fragment {
     private Toolbar myToolbar;
     private SearchView mySearchView;
     private ListView myListView;
-    private SliderView mySliderView;
+    private SliderView myImageSliderView, myTextSliderAdapter;
     List<MenuListItem> myItemList;
     ArrayAdapter<MenuListItem> adapter;
     private String input, type, desc, rtPic, sqPic, file, ref;
@@ -93,17 +93,15 @@ public class TopImgFrag extends Fragment {
 //            }
 //        });
 
-        mySliderView = view.findViewById(R.id.myImageSlider);
+        myImageSliderView = view.findViewById(R.id.myImageSlider);
         ATGSSliderAdapter adapter = new ATGSSliderAdapter(this.getActivity());
-        mySliderView.setSliderAdapter(adapter);
+        myImageSliderView.setSliderAdapter(adapter);
 
-        mySliderView.setIndicatorAnimation(IndicatorAnimations.THIN_WORM); //set indicator animation
-        mySliderView.setSliderTransformAnimation(SliderAnimations.SIMPLETRANSFORMATION); //set image transformation animation
-        mySliderView.setAutoCycleDirection(SliderView.AUTO_CYCLE_DIRECTION_RIGHT); //set cycle direction
-        mySliderView.setScrollTimeInSec(3); //set scroll delay in seconds
-        mySliderView.startAutoCycle();
-
-//        mySliderView.setOnClickListener();
+        myImageSliderView.setIndicatorAnimation(IndicatorAnimations.DROP); //set indicator animation
+        myImageSliderView.setSliderTransformAnimation(SliderAnimations.SIMPLETRANSFORMATION); //set image transformation animation
+        myImageSliderView.setAutoCycleDirection(SliderView.AUTO_CYCLE_DIRECTION_RIGHT); //set cycle direction
+        myImageSliderView.setScrollTimeInSec(3); //set scroll delay in seconds
+        myImageSliderView.startAutoCycle();
 
         // Inflate the layout for this fragment
         return view;
@@ -179,6 +177,4 @@ public class TopImgFrag extends Fragment {
         }
         return items;
     }
-
-
 }

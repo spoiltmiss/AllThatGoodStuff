@@ -31,29 +31,29 @@
         android:id="@+id/myImageSlider"
         layout="@layout/imageslider"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="290dp"
         android:layout_below="@id/myToolbar"
         android:background="@color/colorATGS"
         android:focusedByDefault="true" />
 
-    <TextView
-        android:id="@+id/myPicDesc"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/myImageSlider"
-        android:background="@color/colorATGS"
-        android:fontFamily="@font/albemarle_swash"
-        android:paddingBottom="10dp"
-        android:text="@string/title_desc"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="16sp" />
+<!--    <TextView-->
+<!--        android:id="@+id/myPicDesc"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/myImageSlider"-->
+<!--        android:background="@color/colorATGS"-->
+<!--        android:fontFamily="@font/albemarle_swash"-->
+<!--        android:paddingBottom="10dp"-->
+<!--        android:text="@string/title_desc"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        android:textSize="16sp" />-->
 
     <TextView
         android:id="@+id/myMenuDesc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/myPicDesc"
+        android:layout_below="@id/myImageSlider"
         android:background="#FFFFFF"
         android:elevation="4dp"
         android:fontFamily="@font/copperplate_gothic_light"
