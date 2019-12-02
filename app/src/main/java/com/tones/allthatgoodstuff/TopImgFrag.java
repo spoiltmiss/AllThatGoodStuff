@@ -53,13 +53,13 @@ public class TopImgFrag extends Fragment {
 
         // Reference the widgets
         myToolbar = (Toolbar) view.findViewById(R.id.myToolbar);
-//        mySearchView = (SearchView) view.findViewById(R.id.mySearchView);
         myListView = (ListView) view.findViewById(R.id.searchList);
 
         // Set the toolbar
         ((AppCompatActivity) getActivity()).setSupportActionBar(myToolbar);
+//        mySearchView = (SearchView) view.findViewById(R.id.mySearchView);
 
-        // Set search bar attributes
+        // Set search bar attributes ---> Will implement this when I can
 //        mySearchView.setQuery("", false);
 //        mySearchView.setFocusable(false);
 //        mySearchView.setIconified(false);

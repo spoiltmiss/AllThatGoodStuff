@@ -35,8 +35,6 @@ public class RecipeActivity extends AppCompatActivity {
         Intent intent = getIntent();
         String[] passedIn = intent.getStringArrayExtra("myRecipeInfo");
 
-        Log.i("Whaaat?", passedIn[0]);
-
         //--- Info comes in as strings
         //--- 0 = ref      (ie. 0)
         //--- 1 = rectPic  (ie. rectchoc)
@@ -60,47 +58,6 @@ public class RecipeActivity extends AppCompatActivity {
         recipeDesc = passedIn[3].toUpperCase();
         recipeTitle = passedIn[4];
         recipeFile = passedIn[5];
-
-        // Get recipe filename
-        switch (ref)
-        {
-            case 0:
-                recipeFile = "choc_cake.txt";
-                break;
-            case 1:
-                recipeFile = "red_velvet.txt";
-                break;
-            case 2:
-                recipeFile = "lemon_cake.txt";
-                break;
-            case 3:
-                recipeFile = "choc_cheesecake.txt";
-                break;
-            case 4:
-                recipeFile = "red_velvet_cheesecake.txt";
-                break;
-            case 5:
-                recipeFile = "lemon_cheesecake.txt";
-                break;
-            case 6:
-                recipeFile = "ambrosia.txt";
-                break;
-            case 7:
-                recipeFile = "banoffee.txt";
-                break;
-            case 8:
-                recipeFile = "mousse_cake.txt";
-                break;
-            case 9:
-                recipeFile = "sticky_date.txt";
-                break;
-            case 10:
-                recipeFile = "choc_pud.txt";
-                break;
-            default:
-                recipeFile = "choc_cake.txt";
-                break;
-        }
 
         // Set title and description
         myDesc.setText(recipeDesc);
